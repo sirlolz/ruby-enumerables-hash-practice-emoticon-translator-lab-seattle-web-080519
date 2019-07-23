@@ -19,6 +19,8 @@ def get_japanese_emoticon(file_path, emoticon)
       emote.each do |v|
         if v[0] == emoticon
           return v[1]
+        else
+          return puts " Sorry, that emoticon was not found"
         end
       end
       end
