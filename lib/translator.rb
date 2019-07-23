@@ -27,7 +27,7 @@ def get_japanese_emoticon(file_path, emoticon)
      return e
    else
      binding.pry
-     return puts "Sorry, that emoticon was not found"
+     puts "Sorry, that emoticon was not found"
    end
 end
 
