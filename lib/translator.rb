@@ -28,12 +28,12 @@ end
 
 def get_english_meaning(file, emoticon)
   load_library(file)
-  #load_library(file).each do |k, emote|
+  load_library(file).each do |k, emote|
    # if k == "get_meaning"
     #  emote.each do |emotion|
      #    return emotion[1]
      #   end
     #  end
   #  end
-#  end
+  end
 end
