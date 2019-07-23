@@ -15,6 +15,7 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   load_library(file_path)
+  e = ""
   load_library(file_path).each do |k, emote|
       emote.each do |v|
         if v[0] == emoticon
@@ -22,7 +23,7 @@ def get_japanese_emoticon(file_path, emoticon)
         end
       end
     end
-   if e
+   if e.length > 2
      return e
    else
      return puts "Sorry, that emoticon was not found"
