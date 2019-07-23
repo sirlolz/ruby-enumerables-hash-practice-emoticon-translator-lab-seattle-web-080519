@@ -26,7 +26,7 @@ def get_japanese_emoticon(file_path, emoticon)
    if e.length > 2
      return e
    else
-     binding.pry
+     #binding.pry
      puts "Sorry, that emoticon was not found"
    end
 end
