@@ -31,7 +31,9 @@ def get_english_meaning(file_path, emoticon)
   load_library(file_path).each do |k, emote|
     if k == "get_meaning"
       emote.each do |emotion|
-        binding.pry
+        if emotion[0] == emoticon
+          return emotion[1]
+        end
       end
     end
   end
